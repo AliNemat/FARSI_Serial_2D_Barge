@@ -1,0 +1,43 @@
+
+
+gx=0.d0
+leg=0 !0.2
+UBarV(:)=0 
+omegaz=0
+
+
+
+yfree=Landa  ! 1.0 !1.25 !1.75  !2.0d0 !1.0
+  
+beta=1.2
+pdif=0.001 !0.00005 !0.01
+
+roair=10.0d0 !1.0d0
+rodrop=1000.0d0
+
+miudrop=rodrop*1.0E-6  !! 1 
+miuair=roair*1.0E-6
+
+
+!!tether coordinates !!
+
+
+Ox(1)=floatx+r2+leg;               Oy(1)=0        
+Ox(2)=floatx-r2-leg;               Oy(2)=0          
+          
+
+
+
+!! do not forget gap and eps !!
+
+!tolen=1.5
+
+
+dt=0.0002 !0.002 !0.0005 !0.004 !0.005 !0.0025  !0.0005  !0.01 0.002
+
+tstep=800000 !70000  !4000 !1000 !int(20.0*period/dt)
+
+plot=1000 !250  !100
+
+ks=0
+
